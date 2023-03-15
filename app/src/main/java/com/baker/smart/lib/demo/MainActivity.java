@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private GLTextureView mGlSurfaceView;
     private TextView tvQuestion, tvAnswer;
     private ImageView imgRecording;
-    private String mVoiceName = "Jiaojiao";
+    private String mVoiceName = "Beiling";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -161,20 +161,20 @@ public class MainActivity extends AppCompatActivity {
     private int effectIndex = 0;
     public void switchBundle(View view) {
         effectIndex++;
-        if (effectIndex==3){
+        if (effectIndex==2){
             effectIndex = 0;
         }
         SmartGuyEngine.getInstance().switchBundle(effectIndex);
         //切换形象的同时，设置合成的声音音色
         switch (effectIndex){
             case 0:
-                SmartGuyEngine.getInstance().setTtsVoiceName("Lingling");
+                SmartGuyEngine.getInstance().setTtsVoiceName("Beiling");
                 break;
             case 1:
-                SmartGuyEngine.getInstance().setTtsVoiceName("Guozi");
+                SmartGuyEngine.getInstance().setTtsVoiceName("Beiling");
                 break;
             case 2:
-                SmartGuyEngine.getInstance().setTtsVoiceName("Tiantian");
+                SmartGuyEngine.getInstance().setTtsVoiceName("Beiling");
                 break;
         }
     }

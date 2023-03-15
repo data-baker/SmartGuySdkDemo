@@ -11,6 +11,7 @@ public class BaseApplication extends Application {
     public static final String asrClientId = "your clientId";
     public static final String asrSecret = "your secret";
 
+
     @Override
     public void onCreate() {
         super.onCreate();
